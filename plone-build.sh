@@ -50,7 +50,7 @@ gosu nobody true
 echo -en "Fetching Buildout Configuration And Start Building$COL_RESET\n"
 virtualenv -p python2.7 .
 bin/pip2.7 install -r https://raw.githubusercontent.com/plone/buildout.coredev/5.1/requirements.txt
-wget https://raw.githubusercontent.com/svx/plone5.mini/docker/buildout.cfg
+wget https://gist.githubusercontent.com/svx/64aabd94bd26d01d6b41d701313a7d60/raw/61cd177df99563a04468de2cd2670bb5fe70859d/buildout.cfg
 bin/buildout
 rm buildout.cfg
 
